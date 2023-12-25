@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unenter</title>
+    <link rel="stylesheet" type="text/css" href="assets/cc.css">
+    <link rel="stylesheet" type="text/css" href="assets/cc_enter.css">
+</head>
+
+<body>
+    <div class="wrap">
+        <h1 class="ww">請登入或註冊</h1>
+        <label for="email">請輸入信箱</label>
+		<form action="checkmem.jsp" method="POST">
+        <input type="email" name="mail" class="email" placeholder="請輸入信箱"><br>
+        <label for="password">請輸入密碼</label>
+        <input type="password" name="pwd" class="password" placeholder="請輸入密碼"> <br>
+        <div class="btn">
+            <input type="button" value="還沒註冊" class="signUp" onclick="location.href='signup.jsp'">
+            <input type="submit" name="b1" value="登入" class="logIn">
+		</form>
+        </div>
+    </div>
+</body>
+
+</html>
