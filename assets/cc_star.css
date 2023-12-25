@@ -1,0 +1,59 @@
+.happy{
+    background-color: #eac9cd;
+}
+.rating {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  background-color: #eac9cd;
+}
+
+.rating input {
+  display: none;
+  background-color: #eac9cd;
+}
+
+.rating label {
+  font-size: 0;
+  background-color: #eac9cd;
+}
+
+.rating label.stars::before, .rating label.hearts::before {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+/* Hover effect */
+.rating.effect input:checked + label ~ label.stars::before, .rating.effect:hover input:hover + label ~ label.stars::before {
+  background: url(../images/star0.png) no-repeat center center;
+  background-size: 40px;
+  opacity: .3;
+}
+
+.rating.effect:hover input + label ~ label.stars::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 40px;
+}
+
+.rating.effect input:checked + label ~ label.hearts::before, .rating.effect:hover input:hover + label ~ label.hearts::before {
+  background: url(../images/star0.png) no-repeat center center;
+  background-size: 40px;
+  opacity: .3;
+}
+
+.rating.effect:hover input + label ~ label.hearts::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 40px;
+}
+.rating label.stars::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 40px;
+}
+
+.rating label.hearts::before {
+  background: url(../images/star1.png) no-repeat center center;
+  background-size: 40px;
+}

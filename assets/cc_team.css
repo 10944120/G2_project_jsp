@@ -1,0 +1,54 @@
+.box{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.box1{
+    display: flex;
+    flex-direction: column;
+}
+.photo{
+    display: flex;
+    width: 250px;
+    border-radius: 50%;
+    margin: 20px;
+}
+.photo:hover {
+  transform: scale(1.1);
+}
+.igname{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.name{
+    border: dashed;
+	background: #dab2d3;
+	border-radius:25px;
+	border-color: #df83ce;
+	width: 150px;
+	height: 40px;
+	text-align: center;
+	font-size: 24pt;
+	-webkit-user-select:none;/*禁止反白*/
+}
+.igfb{
+    width: 40px;
+    margin: 5px 0px 5px 5px;
+}
+.igfb:hover {
+  transform: scale(1.2);
+}
+.box2{
+    width: 600px;
+    height: 150px;
+    border-radius: 25px;
+    background: #eac9cd;
+    border: dashed;
+    border-color:#e7a0a8 ;
+    padding: 30px;
+    margin: 20px;
+    font-size: 20px;
+    -webkit-user-select:none;/*禁止反白*/
+}
